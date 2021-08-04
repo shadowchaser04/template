@@ -1,0 +1,36 @@
+nav{
+	top:0;
+	width: 100%;
+	display: flex;
+	height:$nav-height-xl;
+	position: fixed;
+	box-sizing:border-box;
+	background-color:color(theme, nav);
+	border-bottom: 1px solid color(theme, border);
+	box-shadow: .1rem .1rem 1rem .4rem color(theme, shade);
+}
+
+nav > .logo{
+	margin: 1rem;
+	color: color(greyscale-color, base);
+}
+
+// flex grow fills the rest of the space
+nav > ul{
+	flex-grow: 2;
+	text-align: right;
+	padding:1rem;
+}
+
+nav > ul > li{
+	padding: .5rem;
+	display: inline;
+}
+
+nav > ul > li.current{
+	border-bottom: 1px solid color(theme, border)
+}
+
+nav > ul > li > a{
+	color:color(blue-color);
+}

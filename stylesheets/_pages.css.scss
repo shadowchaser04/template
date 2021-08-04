@@ -1,0 +1,151 @@
+// Articles
+
+// Main Article
+
+.main-article-index {
+	text-align: center;
+}
+
+.main-article-index > .main-article-img {
+	//width:span(12);
+	height: 25em;
+	padding:2rem;
+}
+
+.main-article-index > .main-info-wraper {
+	text-align: center;
+	h1 {
+		font-family: 'Secular One', sans-serif;
+	}
+	.info {
+	}
+	.published {
+	}
+}
+
+
+/*
+ * To create rows the container needs wrap. The child elements width is devided
+ * by how ever many rows you want. Example: calc(100% / 5) would create 5 rows.
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+ *
+ */
+
+article {
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+
+article > .article-container {
+	width: calc(100% / 3);
+
+}
+
+article > .article-container > .article-img {
+	//width:span(12);
+	height: 20em;
+	padding:2rem;
+}
+
+article > .article-container > .info-wraper {
+	text-align: center;
+	h4 {
+		text-transform: capitalize;
+		font-family: 'Secular One', sans-serif;
+		margin-bottom: .5rem;
+	}
+	.info {
+		text-transform: uppercase;
+	}
+}
+
+
+// Article Show
+
+header.article-show-header {
+	display: flex;
+    flex-direction: column;
+}
+
+header.article-show-header > .published {
+	margin-top: 2.5rem;
+	text-align:center;
+	border-bottom:double;
+}
+
+header.article-show-header > h1 {
+	text-transform: capitalize;
+	text-align:center;
+	font-weight: 200;
+}
+
+header.article-show-header > img {
+	height:50vh;
+	padding:0 5rem;
+}
+
+main.article-show {
+	font-weight:100;
+	margin:0 5rem;
+}
+
+
+.article-show-user-img {
+	width: 8%;
+    height: 5rem;
+	border-radius:50%;
+	border: .1rem solid #666;
+	padding:0;
+}
+
+.byline-wraper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 2rem;
+}
+
+.byline-wraper > .author-info {
+	margin:1rem 0;
+	padding: 0 2rem;
+}
+
+.byline-wraper > .published-info {
+	margin:1rem 0;
+	padding: 0 2rem;
+}
+
+main.article-show > blockquote {
+}
+
+main.article-show > p {
+}
+
+main.article-show > p > img {
+	padding:5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

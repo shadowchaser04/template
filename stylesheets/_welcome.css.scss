@@ -1,0 +1,246 @@
+section {
+	box-sizing: border-box;
+}
+
+/*
+section.welcome-main    //  height = 100vh
+> header.welcome
+    > .hero             //  height = 60vh
+> .welcome-information  //  height = 40vh
+    p.welcome-info
+*/
+
+// welcome main
+
+section.welcome-main {
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+section.welcome-main > header.welcome-header {
+}
+
+section.welcome-main > header.welcome-header > .hero{
+	background-image:url(hero-image);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+section.welcome-main > .welcome-information {
+    height: 40vh;
+    box-sizing: border-box;
+    padding: 2rem;
+    text-align: center;
+}
+
+section.welcome-main > .welcome-information > p.welcome-info {
+	font-weight: 300;
+}
+
+// welcome news
+
+section.news{
+	height:100vh;
+	padding:1rem 0;
+	border-bottom: 1rem solid #666;
+	background-color: color(greyscale-color, lightest);
+    box-sizing: border-box;
+}
+section.news > h1 {
+    font-weight: 100;
+    padding: 0 2rem;
+	span {
+		color: #4192d9;
+	}
+}
+
+
+section.news > .news-container {
+	display:flex;
+	flex-direction: row;
+}
+
+.welcome-most-recent > img.most-recent-img {
+	height: 15em;
+}
+
+.welcome-most-recent > .byline {
+	text-align:center;
+}
+
+section.news > .news-container > .welcome-most-recent {
+    width: calc(100% / 4);
+	margin: 1rem;
+}
+
+.welcome-most-recent > .news-article-information {
+    height: 16rem;
+    border: 1px solid;
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    background-color: #272525;
+    color: white;
+    text-align: center;
+}
+
+.welcome-most-recent > .news-article-information > h4 {
+	text-align:center;
+}
+
+.welcome-most-recent > .news-article-information > .most-recent-text {
+	font-weight: 300;
+}
+
+.most-recent-text > p {
+	font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+// welcome reviews
+
+section.reviews {
+	padding:1rem 0;
+}
+
+section.reviews {
+	height:100vh;
+	background-color: color(greyscale-color, light);
+	border-bottom: 1rem solid color(greyscale-color, darkest);
+}
+section.reviews > h1 {
+    font-weight: 100;
+    padding: 0 2rem;
+	span {
+		color: #4192d9;
+	}
+}
+
+section.reviews > .reviews-container {
+	display:flex;
+	flex-direction: row;
+}
+
+section.reviews > .welcome-most-recent {
+	margin:1rem;
+}
+
+section.reviews > .welcome-most-recent > h4 {
+	text-align:center;
+}
+
+section.reviews > .reviews-container > .welcome-most-recent {
+    width: calc(100% / 3);
+	margin: 1rem;
+}
+
+section.reviews > .reviews-container > .welcome-most-recent > img.most-recent-img {
+	height: 15em;
+}
+
+section.reviews > .reviews-container > .welcome-most-recent > .info-wraper {
+    height:15rem;
+	border-top: 1rem solid color(blue-color);
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 300;
+    border-radius: 0 0 1rem 1rem;
+	background-color: color(greyscale-color, darkest);
+}
+
+.info-wraper > .byline {
+	background-color:#4192d92b;
+    border-bottom: .1rem solid #4192d9;
+    border-top: double;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    color: color(blue-color);
+}
+
+.info-wraper > .most-recent-text {
+	color:#4c4c4c;
+}
+
+
+// sponsor
+
+section.welcome-sponsor {
+	height:100vh;
+
+	padding:5rem;
+	background-color:color(greyscale-color, dark);
+}
+
+section.welcome-sponsor > h1 {
+	font-weight:200;
+	margin: 0 1em 0 1em;
+    text-transform: capitalize;
+}
+
+section.welcome-sponsor > h3 {
+	font-family: 'Lobster', cursive;
+	text-align: center;
+}
+
+section.welcome-sponsor > .sponsor-container {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+}
+
+.sponsor {
+	width: calc(100% / 4);
+	padding:1rem;
+}
+
+.sponsor > h3 {
+	font-weight:300;
+	text-transform: capitalize
+}
+
+%sponsor-img{
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 15rem;
+	filter: grayscale(100%);
+	border:.5rem solid #666;
+	border-radius:50%;
+	background-color:#0000003b;
+}
+
+.sponsor-container > .sponsor > .img1 {
+	background-image:url(subway);
+	@extend %sponsor-img;
+}
+.sponsor-container > .sponsor > .img2 {
+	background-image:url(pizzahut);
+	@extend %sponsor-img;
+}
+.sponsor-container > .sponsor > .img3 {
+	background-image:url(nandos);
+	@extend %sponsor-img;
+}
+
+.sponsor-container > .sponsor > .img4 {
+	background-image:url(starbucks);
+	@extend %sponsor-img;
+}
+
+.spondor-info-text {
+	display:flex;
+	flex-direction: row;
+
+}
+.sponsor-info-text > p.info {
+	font-weight: 300;
+	text-align: center;
+	color: white;
+	padding: 1rem;
+}
+
+

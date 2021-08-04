@@ -1,0 +1,42 @@
+//------------------------------------------------------------------------------
+// Container
+//------------------------------------------------------------------------------
+.container{
+  margin-top: $nav-height-xl;
+}
+
+//------------------------------------------------------------------------------
+// Hero - base style
+//------------------------------------------------------------------------------
+/*
+ * the picture is 50 % of the viewport height minus the nav. The other 50 is
+ * dedicated to the text area.
+*/
+.hero{
+  height: calc(60vh - 4rem);
+  @extend %flex-center-item;
+}
+
+
+//------------------------------------------------------------------------------
+// alignment
+//------------------------------------------------------------------------------
+
+.center{
+  text-align: center;
+}
+
+.right{
+  text-align: right;
+}
+
+.left{
+  text-align: left;
+}
+
+
+.devide {
+	border-bottom: 1px solid #666;
+	@extend %clearfix;
+	margin:2em;
+}

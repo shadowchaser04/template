@@ -1,0 +1,45 @@
+//------------------------------------------------------------------------------
+// Colorscheme
+//------------------------------------------------------------------------------
+$colorscheme: (
+  red-color: (
+    base:      $red,
+    light:     $light-red,
+    dark:      $dark-red,
+    darkest:   $dark-red,
+  ),
+  blue-color: (
+    base:      $blue,
+    light:     $light-blue,
+    dark:      $dark-blue,
+    darkest:   $darkest-blue,
+  ),
+  green-color: (
+    base:      $green,
+    light:     $light-green,
+    dark:      $dark-green,
+    darkest:   $darkest-green,
+  ),
+  greyscale-color: (
+    base:      $white-color,
+    lightest:  $lightest-grey,
+    light:     $light-grey,
+    dark:      $dark-grey,
+    darkest:   $darkest-grey,
+    blackest:  $black-color,
+  ),
+  theme: (
+    b:          $border,
+    shade:      $black-color,
+    bg:         $white-color,
+    aside:      $aside,
+    nav:        $nav,
+  ),
+  dark-bg: (
+    db1: #222831,
+    db2: #181C22,
+    db3: #1A1D24,
+  ),
+);
+
+

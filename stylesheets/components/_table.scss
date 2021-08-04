@@ -1,0 +1,26 @@
+//------------------------------------------------------------------------------
+// Table
+//------------------------------------------------------------------------------
+
+table, td, th {
+	border: 1px solid;
+	border-color: color(greyscale-color, lightest);
+	text-align: left;
+}
+
+table {
+	//width:span(12);
+	border-collapse: collapse;
+	background-color: color(greyscale-color);
+}
+
+th, td {
+	padding: .6rem;
+	text-align: left;
+	//width:breakpoint(large){
+	padding: 15px;
+    }
+
+tr:nth-child(even) {
+	background-color: lighten(color(greyscale-color, lightest), 20%);
+}

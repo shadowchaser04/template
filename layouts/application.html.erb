@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+  <body>
+    <!-- Begin Navigation-->
+    <%= render 'layouts/nav' %>
+
+    <!-- Begin Flash-->
+    <%= render 'layouts/flashmessages' %>
+    <% if params[:controller].split("/").first == "admin" %>
+
+    <!-- Begin Admin Wrapper-->
+      <div class="admin-wrapper">
+
+        <!-- Do not renderder the aside on sign up / sign in -->
+        <% unless params[:controller] == "admin/users/sessions" || params[:controller] == "admin/users/registrations" %>
+          <!-- Begin Aside-->
+          <%= render "admin/partials/aside" %>
+        <% end %>
+
+        <!--Begin Container Admin-->
+        <div class="container-admin">
+          <%= yield %>
+        </div>
+
+      </div>
+
+    <% else %>
+      <div class="container">
+        <%= yield %>
+      </div>
+    <% end %>
+
+  </body>
+</html>
+
+

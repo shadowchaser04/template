@@ -1,0 +1,94 @@
+//------------------------------------------------------------------------------
+// Media Query
+//------------------------------------------------------------------------------
+.field{
+	width:breakpoint(small){
+		//width:span(12);
+	}
+	width:breakpoint(medium){
+		//width:span(6);
+	}
+	width:breakpoint(large){
+		//width:span(6);
+	}
+}
+
+//------------------------------------------------------------------------------
+// Extend
+//------------------------------------------------------------------------------
+%form-common{
+	border: 1px solid;
+}
+
+//------------------------------------------------------------------------------
+// Form - inputs, textarea and submit
+//------------------------------------------------------------------------------
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+	@extend %form-common;
+	width: 90%;
+	margin-top: 10px;
+	padding: .5em 1em;
+	line-height: 1.75;
+	border-radius: .35em;
+	&:focus{
+		outline:none;
+	}
+}
+
+input[type="text"] {
+	height: 35px;
+}
+//------------------------------------------------------------------------------
+// Textarea
+//------------------------------------------------------------------------------
+
+textarea {
+	min-height: 180px;
+	background-color: lighten(color(greyscale-color, light), 30%);
+	&:focus{
+		outline:none;
+		transition:  all .6s ease;
+		background-color: color(greyscale-color);
+	}
+}
+
+//------------------------------------------------------------------------------
+// Submit
+//------------------------------------------------------------------------------
+input[type="submit"] {
+	@extend %form-common;
+	outline: none;
+	font-size: 1.1em;
+	margin-left: .5em;
+	padding: .5em 1.5em;
+	border-radius: .2em;
+	&:hover {
+		@extend %form-common;
+		transition:  all .6s ease;
+	}
+}
+
+
+//------------------------------------------------------------------------------
+// colection select
+//------------------------------------------------------------------------------
+select#article_category_id {
+	width:span(6);
+	padding:.5rem;
+	option{
+		border-radius:0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
