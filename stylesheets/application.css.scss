@@ -1,6 +1,12 @@
 @import "bourbon";
 
 /*
+  Reset Html elements and styles
+*/
+@import "reset";
+
+
+/*
   Helpers - extends, functions, maps, mixins, variables
 */
 @import "helpers/helpers_manifest";
@@ -21,9 +27,9 @@
 @import "bootstrap/bootstrap";
 
 /*
-  Layouts - layout, elements
+  Layouts - elements
 */
-@import "layouts/layouts_manifest";
+@import "elements/elements_manifest";
 
 /*
   typography - fonts, type, icons
@@ -33,9 +39,6 @@
 /*
  * scss  styling for the site pages
 */
-@import "admin";
 @import "pages";
-@import "welcome";
-@import "login";
 
 
