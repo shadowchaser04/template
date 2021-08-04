@@ -1,18 +1,19 @@
 html {
-  webkit-font-smoothing: antialiased;
-  moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
+	box-sizing: border-box;
+	webkit-font-smoothing: antialiased;
+	moz-osx-font-smoothing: grayscale;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
 }
 *, *::before, *::after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 body{
-  font:{
-    font-size: $base-font-size;
-    family: $primary-font;
+	font:{
+	font-size: $base-font-size;
+	family: $primary-font;
   }
-  //line-height:  $line-height-ratio;
 	margin:0;
 	@include linx(color(blue-color));
 	color:color(greyscale-color, darkest);
@@ -23,23 +24,13 @@ body{
 }
 
 * {
-  margin-top:     0;
-  margin-bottom:  0;
-  padding-top:    0;
-  padding-bottom: 0;
-}
-
-// no underline
-a{
-  text-decoration: none;
-}
-
-// no bullets
-li{
-  list-style: none;
+	margin-top:     0;
+	margin-bottom:  0;
+	padding-top:    0;
+	padding-bottom: 0;
 }
 
 // width
 img{
-  width: 100%;
+	width: 100%;
 }
