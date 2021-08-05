@@ -1,0 +1,17 @@
+$med:768px;
+$large:1024;
+
+
+@mixin small {
+	@media (max-width : calc(#{$med - 1})) { @content; }
+}
+
+@mixin medium {
+	@media (min-device-width : #{$med}) and (max-device-width : calc(#{$large - 1})) { @content; }
+}
+
+
+@mixin large {
+	@media (min-width : #{$large}) { @content; }
+}
+
