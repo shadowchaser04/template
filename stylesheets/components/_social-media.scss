@@ -1,0 +1,5 @@
+@each $name in 'facebook' 'twitter' 'instagram' {
+    .icon-#{$name} {
+        background-image: url('/images/#{$name}.png');
+    }
+}
