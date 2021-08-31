@@ -1,15 +1,17 @@
-@import "bourbon";
-
 /*
   Reset Html elements and styles
 */
 @import "reset";
 
-
 /*
   Helpers - extends, functions, maps, mixins, variables
 */
 @import "helpers/helpers_manifest";
+
+/*
+  bourbon is used primarily for it modularscale method
+*/
+@import "bourbon";
 
 /*
   base - base, reset
@@ -40,5 +42,6 @@
  * scss  styling for the site pages
 */
 @import "pages";
+@import "articles";
 
 

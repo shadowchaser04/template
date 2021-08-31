@@ -120,10 +120,13 @@ def create_libriary_gens
     empty_directory 'lib/generators'
     empty_directory 'lib/templates/rails/helper'
     empty_directory 'lib/templates/erb'
+    empty_directory 'lib/templates/erb/scaffold'
     # move templates
     directory "generators/forum", "lib/generators/forum"
     directory "generators/category", "lib/generators/category"
     directory "generators/imageable", "lib/generators/imageable"
+    copy_file "_form.html.erb", "lib/templates/erb/scaffold/_form.html.erb"
+
   rescue => error
     puts error.message
   end

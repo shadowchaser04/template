@@ -1,28 +1,57 @@
-.hero {
-}
 h1 {
 	font-size: modular-scale(5);
 	line-height: 1.5em;
 	margin-bottom:1rem;
+	@include medium {
+		font-size: modular-scale(4);
+	}
+	@include small {
+		font-size: modular-scale(3);
+	}
 }
+
 h2 {
-	font-size: modular-scale(3);
+	font-size: modular-scale(4);
 	line-height: 1.5em;
 	margin-bottom:1rem;
+	@include medium {
+		font-size: modular-scale(3);
+	}
+	@include small {
+		font-size: modular-scale(2);
+	}
 }
+
 h3 {
 	font-size: modular-scale(2);
 	line-height: 1.5em;
 	margin-bottom:.5rem;
+	@include medium {
+		font-size: modular-scale(1);
+	}
+	@include small {
+		font-size: modular-scale(0);
+	}
 }
+
 h4 {
 	font-size: modular-scale(1);
 	line-height: 1.5em;
 	margin-bottom:.5rem;
+	@include medium {
+		font-size: modular-scale(0);
+	}
+	@include small {
+		font-size: modular-scale(-1);
+	}
 }
+
 blockquote {
 }
 p {
 	font-size: modular-scale(0);
 	line-height: 1.5em;
+	@include small {
+		font-size: modular-scale(-1);
+	}
 }

@@ -1,0 +1,92 @@
+/*
+	Article Index
+*/
+
+article {
+	&.article_index {
+		flex-direction:row;
+		flex-wrap:wrap;
+		text-align:center;
+	}
+}
+
+.container {
+	&__article_index {
+		width:calc(100% / 4);
+		box-sizing: border-box;
+		padding: 1rem;
+		@include small {
+			width:calc(100% / 1);
+		}
+	}
+}
+
+.article_index {
+	&__header {
+		flex-direction: column;
+	}
+	&__title {
+		text-transform:capitalize;
+		margin-bottom:1rem;
+	}
+	&__content {
+		flex-direction: column;
+		border: 1px solid #6666663d;
+		padding: 1rem;
+	}
+	&__text {
+		font-weight:300;
+		color:color(greyscale-color, light);
+	}
+	&__img {
+		height:15rem;
+	}
+	&__button_row {
+		display:flex;
+		flex-direction: row;
+		> .btn {
+			width: 20vh;
+		}
+	}
+}
+
+
+/*
+	Article Show
+*/
+
+
+.article_show {
+		flex-direction: column;
+		margin-top:8rem;
+
+	&__header {
+		text-align:center;
+		flex-direction: column;
+	}
+	&__title {
+		font-weight:300;
+	}
+	&__published {
+		border-bottom:double;
+	}
+	&__content {
+		flex-direction: column;
+		margin-top:2rem;
+		padding:2rem;
+		font-weight:300;
+	}
+	&__img {
+		height:60vh;
+		padding:2rem;
+	}
+	&__social_media {
+		flex-direction: row;
+	}
+}
+
+p > img {
+	height:60vh;
+	padding:2rem;
+}
+

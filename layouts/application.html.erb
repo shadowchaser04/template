@@ -9,37 +9,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-  <body>
-    <!-- Begin Navigation-->
+  <body id="<%= params[:controller].parameterize %>_controller">
     <%= render 'layouts/nav' %>
-
-    <!-- Begin Flash-->
     <%= render 'layouts/flashmessages' %>
-    <% if params[:controller].split("/").first == "admin" %>
-
-    <!-- Begin Admin Wrapper-->
-      <div class="admin-wrapper">
-
-        <!-- Do not renderder the aside on sign up / sign in -->
-        <% unless params[:controller] == "admin/users/sessions" || params[:controller] == "admin/users/registrations" %>
-          <!-- Begin Aside-->
-          <%= render "admin/partials/aside" %>
-        <% end %>
-
-        <!--Begin Container Admin-->
-        <div class="container-admin">
-          <%= yield %>
-        </div>
-
-      </div>
-
-    <% else %>
-      <div class="container">
+    <!-- Container Controller Action -->
+    <div class="container__<%= params[:controller].parameterize %>_<%= params[:action].parameterize %>">
         <%= yield %>
       </div>
-    <% end %>
-
   </body>
+
 </html>
-
-
